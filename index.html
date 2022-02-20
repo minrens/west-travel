@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西游记小动画</title>
+    <style>
+        body{
+            background: url(./images/xyq.webp) no-repeat;
+        }
+        .footer{
+            width: 760px;
+            height: 240px;
+            /* 外边距 间距200px上下 auto:上下居中 */
+            margin: 300px auto;
+
+        }
+        .west{
+            width: 190px;
+            height:240px;
+            background: url(./images/west_01.png) no-repeat;
+         /* 绑定动画：   名字  时间  脚步 无限循环*/
+            animation: play1 1.2s steps(8) infinite;
+            float: left;
+        }
+        .west:nth-child(2){
+            width: 190px;
+            height:240px;
+            background: url(./images/west_02.png) no-repeat;
+            animation: play2 1.2s steps(8) infinite;
+        }
+        .west:nth-child(3){
+            width: 190px;
+            height:240px;
+            background: url(./images/west_03.png) no-repeat;
+            animation: play3 1.2s steps(8) infinite;
+        }
+        .west:nth-child(4){
+            width: 190px;
+            height:240px;
+            background: url(./images/west_04.png) no-repeat;
+            animation: play4 1.2s steps(8) infinite;
+        }
+        /* css动画 */
+        @keyframes play1 {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position:-1600px 0;
+            }
+            
+        }
+        @keyframes play2 {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position:-1600px 0;
+            }
+            
+        }
+        @keyframes play3 {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position:-1360px 0;
+            }
+            
+        }
+        @keyframes play4 {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position:-1680px 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="west"></div>
+        <div class="west"></div>
+        <div class="west"></div>
+        <div class="west"></div>
+    </div>
+</body>
+</html>
